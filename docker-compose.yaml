@@ -1,11 +1,9 @@
-version: '3.4'
+version: '3.8'
 
 services:
-   worker:
-     image: worker:latest
-     build: .
-     environment:
-       APP_CONFIG_ENDPOINT: https://aaccontrolplane6fsc6pk3z.azconfig.io
-     ports:
-       - 3000
-       - 9229:9229
+  worker:
+    image: worker:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file: .env
