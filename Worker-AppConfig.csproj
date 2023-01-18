@@ -5,6 +5,8 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>dotnet-Worker_AppConfig-a23c6784-d930-4adf-a8bf-3dc7a7ded33f</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>.</DockerfileContext>
     <RootNamespace>Worker_AppConfig</RootNamespace>
   </PropertyGroup>
 
