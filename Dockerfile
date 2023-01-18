@@ -5,8 +5,8 @@ WORKDIR /app
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
-COPY ["WorkerService1.csproj", "."]
-RUN dotnet restore "./Worker-AppConfig.csproj"
+COPY ["Worker-AppConfig.csproj", "."]
+RUN dotnet restore "Worker-AppConfig.csproj"
 COPY . .
 WORKDIR "/src/."
 RUN dotnet build "Worker-AppConfig.csproj" -c Release -o /app/build
